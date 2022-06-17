@@ -1,0 +1,88 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 6  0 0 0  0 1 0
+
+Vertex	 innerball.vert
+Fragment innerball.frag
+Program	 innerball				\
+	uKa <0. 0.33 1.0>                        \
+    uKd <0. 0.6 1.0>                        \
+    uKs <0. 0.3 1.0>                        \
+    uLightX <-20. -6. 20.>                   \
+    uLightY <-20. 10. 20.>                  \
+    uLightZ <-20. 4. 20.>                  \
+    uShininess <1. 10. 1000.>               \
+    uSpecularColor {1. 1. 1. 1.}			
+
+Sphere 0.6 50 50
+
+Vertex      curve.vert
+Geometry    curve.geom
+Fragment    curve.frag
+Program BezierCurve1         \
+    uAmp <-20. 0. 20>           \
+    uNoiseAmp <0. 0. 1.>		\
+    uNoiseFreq <0. 1. 2.>	    \
+    uRed <0. 0. 1.>		\
+    uGreen <0. 1. 1.>		\
+    uBlue <0. 0. 1.>
+
+LineWidth 5.
+LinesAdjacency [0. 0. 0.] [1. 1. 1.] [2. 1. 2.] [3. -1. 0.]
+LineWidth 5.
+LinesAdjacency [0. 0. 0.] [-1. -1. 0.] [-2. 0. 0.] [-3. 0. -1.]
+LineWidth 5.
+LinesAdjacency [0. 0. 0.] [-1. 1. -1.] [0. 2. -1.] [1. 1. -2.]
+LineWidth 5.
+LinesAdjacency [0. 0. 0.] [0. -1. 1.] [-1. 0. 2.] [-1. 1. 0.]
+LineWidth 5.
+LinesAdjacency [0. 0. 0.] [0. -1. 0.] [-1. -1. -1.] [-2. -2. -2.]
+LineWidth 5.
+LinesAdjacency [0. 0. 0.] [1. -1. -1.] [1. -2. -2.] [1. -3. -3.]
+
+Vertex curve2.vert
+Geometry curve2.geom
+Fragment curve2.frag
+Program BezierCurve2        \
+    uAmp <-20. 0. 20>           \
+    uNoiseAmp <0. 0. 1.>		\
+	uNoiseFreq <0. 1. 2.>		\
+    uRed <0. 0. 1.>		\
+    uGreen <0. 1. 1.>		\
+    uBlue <0. 0. 1.>
+LineWidth 15.
+LinesAdjacency [0. 0. 0.] [1. 1. 1.] [2. 1. 2.] [3. -1. 0.]
+LineWidth 15.
+LinesAdjacency [0. 0. 0.] [-1. -1. 0.] [-2. 0. 0.] [-3. 0. -1.]
+LineWidth 15.
+LinesAdjacency [0. 0. 0.] [-1. 1. -1.] [0. 2. -1.] [1. 1. -2.]
+LineWidth 15.
+LinesAdjacency [0. 0. 0.] [0. -1. 1.] [-1. 0. 2.] [-1. 1. 0.]
+LineWidth 15.
+LinesAdjacency [0. 0. 0.] [0. -1. 0.] [-1. -1. -1.] [-2. -2. -2.]
+LineWidth 15.
+LinesAdjacency [0. 0. 0.] [1. -1. -1.] [1. -2. -2.] [1. -3. -3.]
+
+
+
+Vertex   plasmaball.vert
+Fragment plasmaball.frag
+Geometry
+Program  PlasmaBall				\
+	uKa <0. 0.33 1.0>                        \
+    uKd <0. 0.6 1.0>                        \
+    uKs <0. 0.3 1.0>                        \
+    uLightX <-20. -6. 20.>                   \
+    uLightY <-20. 10. 20.>                  \
+    uLightZ <-20. 4. 20.>                  \
+    uShininess <1. 10. 1000.>
+
+Color 0. .1 0
+Sphere 3. 50 50
+
+
+
+
+
+

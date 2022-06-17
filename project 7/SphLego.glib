@@ -1,0 +1,15 @@
+##OpenGL GLIB
+
+Perspective 90
+LookAt 12 5 20 0 0 0 0 1 0
+
+Vertex   sphlego.vert
+Geometry sphlego.geom
+Fragment sphlego.frag
+Program  SphLego  			\
+	 uRadiusOnly <true>		\
+	 uLevel <0 3 3>			\
+	 uQuantize <1. 50. 50.>		\
+	 uColor { 1.00 0.65 0.40 }
+
+Obj tigerstsL.obj

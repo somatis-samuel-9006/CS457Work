@@ -1,0 +1,6 @@
+
+0(11) : error C0000: syntax error, unexpected identifier, expecting '{' at token "Ns"
+0(13) : error C0000: syntax error, unexpected identifier, expecting '{' at token "Ls"
+0(68) : error C1503: undefined variable "vNs"
+0(70) : error C1503: undefined variable "vLs"
+

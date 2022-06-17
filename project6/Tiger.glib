@@ -1,0 +1,25 @@
+##OpenGL GLIB
+
+Perspective 90
+LookAt 12 5 20 0 0 0 0 1 0
+
+Vertex tiger.vert
+Fragment tiger.frag
+Program Tiger \
+    uA <0 1. 10> \
+    uP <0. .25 1.> \
+    uTol <0. 0. .5> \
+    uNoiseAmp <0. 0. 1.>		\
+	uNoiseFreq <0. 1. 10.>		\
+    uKa <0. 0.1 1.0>                        \
+    uKd <0. 0.6 1.0>                        \
+    uKs <0. 0.3 1.0>                        \
+    uLightX <-20. -6. 20.>                   \
+    uLightY <-20. 10. 20.>                  \
+    uLightZ <-20. 4. 20.>                  \
+    uColor {1. .7 0. 1.}                    \
+    uShininess <1. 10. 1000.>               \
+    uSpecularColor {1. 1. 1. 1.}
+
+Color 0 0.5 0
+Obj tigerstsH.obj

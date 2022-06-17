@@ -1,0 +1,3 @@
+
+0(67) : error C1503: undefined variable "uRadius"
+

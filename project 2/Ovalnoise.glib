@@ -1,0 +1,21 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+
+Vertex   ovalnoise.vert
+Fragment ovalnoise.frag
+Program  Ovalnoise				\
+	uAd <.01 .05 .5>		\
+	uBd <.01 .05 .5>		\
+	uNoiseAmp <0. 0. 1.>		\
+	uNoiseFreq <0. 1. 10.>		\
+	uAlpha <0. 1. 1.>		\
+	uUseChromaDepth <false>		\
+	uChromaRed <-3., 1., 2.>		\
+	uChromaBlue <-5. -1. 0.>		\
+	uTol <0. 0. 1.>
+
+Color 0. .1 0
+Sphere 1 50 50
